@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main()
+{
+    int choice;
+    char book[50];
+    printf("1. Add Book\n");
+    printf("2. Show Book\n");
+    printf("Enter Choice: ");
+    scanf("%d", &choice);
+    if (choice == 1)
+    {
+        printf("Enter Book Name: ");
+        scanf(" %[^\n]", book);
+        printf("Book Added Successfully!\n");
+    }
+    if (choice == 2)
+    {
+        printf("Book Name: %s\n", book);
+    }
+    return 0;
+}
