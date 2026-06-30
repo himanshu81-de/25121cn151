@@ -1,0 +1,29 @@
+#include <stdio.h>
+int main()
+{
+    int choice;
+    char name[50];
+    char phone[15];
+    printf("1. Add Contact\n");
+    printf("2. Show Contact\n");
+    printf("Enter Choice: ");
+    scanf("%d", &choice);
+    switch(choice)
+    {
+        case 1:
+            printf("Enter Name: ");
+            scanf("%s", name);
+            printf("Enter Phone Number: ");
+            scanf("%s", phone);
+            printf("\nContact Saved Successfully!\n");
+            printf("Name : %s\n", name);
+            printf("Phone: %s\n", phone);
+            break;
+        case 2:
+            printf("No Contact Available!\n");
+            break;
+        default:
+            printf("Invalid Choice!");
+    }
+    return 0;
+}
