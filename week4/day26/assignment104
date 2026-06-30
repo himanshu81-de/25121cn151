@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main()
+{
+    int answer;
+    printf("Quiz\n");
+    printf("What is 2 + 2?\n");
+    printf("1. 3\n2. 4\n3. 5\n");
+    printf("Enter your answer: ");
+    scanf("%d", &answer);
+    if (answer == 2)
+    {
+        printf("Correct!\n");
+    }
+    else
+    {
+        printf("Wrong Answer!\n");
+    }
+    return 0;
+}
