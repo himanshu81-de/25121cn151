@@ -1,0 +1,31 @@
+#include <stdio.h>
+int main()
+{
+    int choice;
+    int seats = 10;
+    printf("1. Book Ticket\n");
+    printf("2. Check Available Seats\n");
+    printf("Enter Choice: ");
+    scanf("%d", &choice);
+    switch(choice)
+    {
+        case 1:
+            if(seats > 0)
+            {
+                seats--;
+                printf("Ticket Booked Successfully!\n");
+                printf("Available Seats = %d", seats);
+            }
+            else
+            {
+                printf("No Seats Available!");
+            }
+            break;
+        case 2:
+            printf("Available Seats = %d", seats);
+            break;
+        default:
+            printf("Invalid Choice");
+    }
+    return 0;
+}
