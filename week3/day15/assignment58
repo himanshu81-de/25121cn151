@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main()
+{
+    int a[10], n, i;
+    printf("Enter size of array: ");
+    scanf("%d", &n);
+    printf("Enter array elements:\n");
+    for(i = 0; i < n; i++)
+    {
+        scanf("%d", &a[i]);
+    }
+    printf("Array after left rotation:\n");
+    for(i = 1; i < n; i++)
+    {
+        printf("%d ", a[i]);
+    }
+    printf("%d", a[0]);
+    return 0;
+}
