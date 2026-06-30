@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    char s1[50], s2[50];
+    int ch;
+    printf("Enter first string: ");
+    scanf("%s", s1);
+    printf("1.Length 2.Copy 3.Concat\n");
+    scanf("%d", &ch);
+    if(ch==1)
+        printf("Length = %d", strlen(s1));
+    else if(ch==2)
+    {
+        strcpy(s2, s1);
+        printf("Copied String = %s", s2);
+    }
+    else if(ch==3)
+    {
+        printf("Enter second string: ");
+        scanf("%s", s2);
+        strcat(s1, s2);
+        printf("Result = %s", s1);
+    }
+    return 0;
+}
