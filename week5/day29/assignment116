@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{
+    int id, qty;
+    char name[20];
+    printf("Enter Item ID: ");
+    scanf("%d", &id);
+    printf("Enter Item Name: ");
+    scanf("%s", name);
+    printf("Enter Quantity: ");
+    scanf("%d", &qty);
+    printf("\n--- Inventory Details ---\n");
+    printf("Item ID : %d\n", id);
+    printf("Item Name : %s\n", name);
+    printf("Quantity : %d\n", qty);
+    return 0;
+}
